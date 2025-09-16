@@ -1,0 +1,29 @@
+<%- include('../includes/head.ejs') %>
+    </head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+
+        <main class="centered">
+            <% if (product) { %>
+                        <h1>
+                            <%= product.title %>
+                        </h1>
+                        <hr>
+                    <div class="image">
+                         <img src="/<%= product.imageUrl %>" alt="<%= product.title %>">
+                    </div>
+                        <h2>$
+                            <%= product.price %>
+                        </h2>
+                        <p >
+                            <%= product.description %>
+                        </p>
+                        <% if (isAuthenticated) { %>
+                        <%- include('../includes/add-to-cart.ejs', { product: product }) %>
+                        <% } %> <!-- when inside loop, we need to pass variables explicitly to the include file-->
+            <% } else { %>
+                <h1>Product Not Found!</h1>
+            <% } %>
+        </main>
+        <%- include('../includes/end.ejs') %>

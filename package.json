@@ -1,0 +1,43 @@
+{
+  "name": "nodejs-project",
+  "version": "1.0.0",
+  "description": "Bookstore",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js",
+    "start-dev": "nodemon app.js"
+  },
+  "author": "Arjun Kaliyath",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "compression": "^1.8.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongodb-session": "^5.0.0",
+    "csrf-sync": "^4.2.1",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.3",
+    "express-session": "^1.18.2",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "langchain": "^0.3.31",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.1",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.3",
+    "nodemailer": "^7.0.5",
+    "pdfkit": "^0.17.1",
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.7",
+    "stripe": "^18.4.0"
+  }
+}
